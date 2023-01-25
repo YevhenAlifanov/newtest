@@ -7,12 +7,15 @@
     "test": "features"
   },
   "scripts": {
-    "test": "echo \\\"Error: no features specified\\\" && exit 1"
+    "test": "cucumber-js"
   },
   "author": "yevhen",
   "license": "ISC",
   "dependencies": {
+    "@cucumber/cucumber": "^8.10.0",
+    "@types/node": "^18.11.18",
     "cucumber": "^6.0.7",
-    "npm": "^9.3.1"
+    "npm": "^9.3.1",
+    "selenium-webdriver": "^4.8.0"
   }
 }
