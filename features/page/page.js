@@ -1,7 +1,9 @@
+const assert = require('assert');
+const {Given, When, Then, After} = require('@cucumber/cucumber');
 const {Builder, By, Key, until} = require('selenium-webdriver');
 const driver = new Builder().forBrowser('chrome').build();
 
-class basepage{
+class Basepage{
     constructor(){
         this.driver = driver;
 
@@ -38,4 +40,4 @@ class basepage{
 
 }
 
-module.exports = {basepage}
+module.exports = {Basepage, driver}
